@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Gallery - My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="home.html">Adobe-stock</a></li>
+                <li><a href="Photos.html">Photos</a></li>
+                <li><a href="Illustrations.html">Illustrations</a></li>
+                <li><a href="Vectors.html">Vectors</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Search Section -->
+        <section id="search">
+            <input type="text" id="searchInput" placeholder="Search vectors...">
+            <button onclick="filterVectors()">Search</button>
+        </section>
+
+        <!-- Vector Gallery -->
+        <section id="gallery">
+            <h1>Vector Gallery</h1>
+            <div class="photo-grid">
+                <img src="vector1.jpg" alt="Abstract Art" data-title="abstract">
+                <img src="vector2.jpg" alt="Geometric Design" data-title="geometric">
+                <img src="vector3.jpg" alt="Minimalist Design" data-title="minimalist">
+                <img src="vector4.jpg" alt="Floral Pattern" data-title="floral">
+                <img src="vector5.jpg" alt="Typography" data-title="typography">
+            </div>
+        </section>
+    </main>
+
+    <script src="vector.js"></script>
+</body>
+</html>

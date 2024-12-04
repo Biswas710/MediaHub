@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery - Search Feature</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="home.html">Adobe-stock</a></li>
+                <li><a href="Photos.html">Photos</a></li>
+                <li><a href="Illustrations.html">Illustrations</a></li>
+                <li><a href="Vectors.html">Vectors</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Search Section -->
+        <section id="search">
+            <input type="text" id="searchInput" placeholder="Search videos...">
+            <button onclick="filterVideos()">Search</button>
+        </section>
+
+        <!-- Video Categories -->
+        <section id="gallery">
+            <h1>Video Gallery</h1>
+            
+            <!-- Music Videos -->
+            <h2>Music</h2>
+            <div class="video-grid">
+                <video src="music1.mp4" controls data-category="music" data-title="acoustic">
+                    Your browser does not support the video tag.
+                </video>
+                <video src="music2.mp4" controls data-category="music" data-title="rock">
+                    Your browser does not support the video tag.
+                </video>
+                <video src="music3.mp4" controls data-category="music" data-title="pop">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <!-- Nature Videos -->
+            <h2>Nature</h2>
+            <div class="video-grid">
+                <video src="nature1.mp4" controls data-category="nature" data-title="forest">
+                    Your browser does not support the video tag.
+                </video>
+                <video src="nature2.mp4" controls data-category="nature" data-title="mountains">
+                    Your browser does not support the video tag.
+                </video>
+                <video src="nature3.mp4" controls data-category="nature" data-title="ocean">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <!-- Other Categories -->
+            <h2>Other</h2>
+            <div class="video-grid">
+                <video src="city1.mp4" controls data-category="city" data-title="cityscape">
+                    Your browser does not support the video tag.
+                </video>
+                <video src="abstract1.mp4" controls data-category="abstract" data-title="abstract">
+                    Your browser does not support the video tag.
+                </video>
+                <video src="travel1.mp4" controls data-category="travel" data-title="travel">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+       
