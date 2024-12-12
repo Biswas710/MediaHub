@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery - Search Feature</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">  
 </head>
 <body>
     <header>
         <nav aria-label="Main navigation">
             <ul>
-                <li><a href="home.html">Adobe-stock</a></li>
+                <li><a href="home.html">LS Mediabank</a></li>
                 <li><a href="Photos.html">Photos</a></li>
                 <li><a href="Illustrations.html">Illustrations</a></li>
                 <li><a href="Vectors.html">Vectors</a></li>
@@ -30,14 +30,23 @@
         <section id="gallery">
             <h1>Photo Gallery</h1>
             <div class="photo-grid">
-                <img src="photo1.jpg" alt="Landscape" data-title="landscape">
-                <img src="photo2.jpg" alt="Sunset" data-title="sunset">
-                <img src="photo3.jpg" alt="Mountains" data-title="mountains">
-                <img src="photo4.jpg" alt="Forest" data-title="forest">
-                <img src="photo5.jpg" alt="Beach" data-title="beach">
+                <img src="photo1.jpg" alt="Landscape" data-title="landscape" onclick="openModal('landscape')">
+                <img src="photo2.jpg" alt="Sunset" data-title="sunset" onclick="openModal('sunset')">
+                <img src="photo3.jpg" alt="Mountains" data-title="mountains" onclick="openModal('mountains')">
+                <img src="photo4.jpg" alt="Forest" data-title="forest" onclick="openModal('forest')">
+                <img src="photo5.jpg" alt="Beach" data-title="beach" onclick="openModal('beach')">
             </div>
         </section>
     </main>
+
+    <!-- Modal for more images -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>More images of <span id="modal-title"></span></h2>
+            <div class="modal-grid" id="modal-images"></div>
+        </div>
+    </div>
 
     <script src="photo.js"></script>
 </body>

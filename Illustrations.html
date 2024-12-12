@@ -4,23 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Illustrations Gallery - My Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-    <nav>
-       <ul>
-        <li><a href="home.html">Adobe-Stock</a></li>
-        <li><a href="Photos.html">Photos</a></li>
-        <li><a href="Illustrations.html">Illustrations</a></li>
-        <li><a href="Vectors.html">Vectors</a></li>
-        <li><a href="Videos.html">Videos</a></li>
-       </ul>
-    </nav>
-   
-    
-</header>
-<h1>This is illustartions page</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="home.html">LS Mediabank</a></li>
+                <li><a href="Photos.html">Photos</a></li>
+                <li><a href="Illustrations.html" class="active">Illustrations</a></li>
+                <li><a href="Vectors.html">Vectors</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Search Section -->
+        <section id="search">
+            <input type="text" id="searchInput" placeholder="Search illustrations...">
+            <button onclick="filterIllustrations()">Search</button>
+        </section>
+
+        <!-- Illustration Gallery -->
+        <section id="gallery">
+            <h1>Illustrations Gallery</h1>
+            <div class="photo-grid">
+                <img src="illustration1.jpg" alt="Cartoon Characters" data-title="cartoon">
+                <img src="illustration2.jpg" alt="Nature Artwork" data-title="nature">
+                <img src="illustration3.jpg" alt="Fantasy Scene" data-title="fantasy">
+                <img src="illustration4.jpg" alt="Digital Portrait" data-title="portrait">
+                <img src="illustration5.jpg" alt="Urban Sketch" data-title="urban">
+            </div>
+        </section>
+    </main>
+
+    <script src="illustrations.js"></script>
 </body>
-</html> 
+</html>

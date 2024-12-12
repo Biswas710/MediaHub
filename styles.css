@@ -7,7 +7,6 @@ body {
 }
 
 header {
-  
   padding: 1rem 0;
   text-align: center;
   color: #fff;
@@ -19,7 +18,7 @@ nav ul {
   padding: 0;
   display: flex;
   padding-left: 40px;
-  gap:35px;
+  gap: 35px;
 }
 
 nav ul li a {
@@ -83,4 +82,64 @@ nav ul li a:hover {
 
 .photo-grid img:hover {
   transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.modal-grid img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.modal-grid div {
+  text-align: center;
+}
+
+.modal-grid p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #ff0000;
 }
